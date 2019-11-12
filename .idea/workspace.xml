@@ -106,7 +106,7 @@
       <workItem from="1573164573145" duration="1537000" />
       <workItem from="1573344247554" duration="2963000" />
       <workItem from="1573358175998" duration="473000" />
-      <workItem from="1573521534470" duration="2974000" />
+      <workItem from="1573521534470" duration="3340000" />
     </task>
     <task id="LOCAL-00001" summary="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;">
       <created>1573527434436</created>
@@ -136,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573529536213</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Agency : NYC based agency &quot; benefit from our expertise and experience etc.&quot;">
+      <created>1573529764595</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573529764595</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
