@@ -106,7 +106,7 @@
       <workItem from="1573164573145" duration="1537000" />
       <workItem from="1573344247554" duration="2963000" />
       <workItem from="1573358175998" duration="473000" />
-      <workItem from="1573521534470" duration="8704000" />
+      <workItem from="1573521534470" duration="9003000" />
     </task>
     <task id="LOCAL-00001" summary="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;">
       <created>1573527434436</created>
@@ -311,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573592463738</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Website and app development : our development team = suppression du mot &quot;developement &quot; . Ajout des mots &quot;websites and apps&quot;">
+      <created>1573592851940</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1573592851940</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +362,7 @@
     <MESSAGE value="Social Media Marketing : j'ai ajouté &quot; to increase your revenue&quot;" />
     <MESSAGE value="Modif : the path &quot;to&quot; growth au début du site" />
     <MESSAGE value="social media marketing : j'ai rajouté un &quot;.&quot; en fin de phrase" />
-    <option name="LAST_COMMIT_MESSAGE" value="social media marketing : j'ai rajouté un &quot;.&quot; en fin de phrase" />
+    <MESSAGE value="Website and app development : our development team = suppression du mot &quot;developement &quot; . Ajout des mots &quot;websites and apps&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Website and app development : our development team = suppression du mot &quot;developement &quot; . Ajout des mots &quot;websites and apps&quot;" />
   </component>
 </project>
