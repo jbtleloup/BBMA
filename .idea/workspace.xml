@@ -108,7 +108,7 @@
       <workItem from="1573164573145" duration="1537000" />
       <workItem from="1573344247554" duration="2963000" />
       <workItem from="1573358175998" duration="473000" />
-      <workItem from="1573521534470" duration="5695000" />
+      <workItem from="1573521534470" duration="5967000" />
     </task>
     <task id="LOCAL-00001" summary="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;">
       <created>1573527434436</created>
@@ -194,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573572013851</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Social Media Marketing : j'ai changé la disposition du texte&#10;(j'ai ecrit et deplacé le texte une premiere fois en oubliant de cliquer sur la fleche bleue)">
+      <created>1573572329425</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573572329425</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Social Media Marketing : j'ai changé la disposition du texte">
+      <created>1573572425129</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573572425129</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +238,8 @@
     <MESSAGE value="A digital marketing agency = j'ai ajouté : email &quot;marketing&quot;, j'ai supprimé &quot;advertisement / reach the best results&quot; et j'ai ajouté &quot;paid traffic / grow your business and generate more revenue &quot;&quot;" />
     <MESSAGE value="Social Media Marketing : j’ai supprimé  &quot;to be an Instagram Influencer or just&quot;  et j'ai ajouté “Using social media for business growth is a powerful strategy to raise awareness, drive traffic and  generate and convert leads into new customers”" />
     <MESSAGE value="Social Media Marketing : j’ai supprimé  &quot;looking to grow your business ? we got you covered&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Social Media Marketing : j’ai supprimé  &quot;looking to grow your business ? we got you covered&quot;" />
+    <MESSAGE value="Social Media Marketing : j'ai changé la disposition du texte&#10;(j'ai ecrit et deplacé le texte une premiere fois en oubliant de cliquer sur la fleche bleue)" />
+    <MESSAGE value="Social Media Marketing : j'ai changé la disposition du texte" />
+    <option name="LAST_COMMIT_MESSAGE" value="Social Media Marketing : j'ai changé la disposition du texte" />
   </component>
 </project>
