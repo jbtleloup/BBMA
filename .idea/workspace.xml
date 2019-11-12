@@ -109,8 +109,23 @@
       <workItem from="1573164573145" duration="1537000" />
       <workItem from="1573344247554" duration="2963000" />
       <workItem from="1573358175998" duration="473000" />
-      <workItem from="1573521534470" duration="788000" />
+      <workItem from="1573521534470" duration="1292000" />
     </task>
+    <task id="LOCAL-00001" summary="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;">
+      <created>1573527434436</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573527434436</updated>
+    </task>
+    <task id="LOCAL-00002" summary="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;">
+      <created>1573527586831</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573527586831</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,5 +143,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;" />
   </component>
 </project>
