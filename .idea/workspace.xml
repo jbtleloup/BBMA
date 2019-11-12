@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f201938a-c2a8-4dff-8f5f-218c1d96351a" name="Default Changelist" comment="" />
+    <list default="true" id="f201938a-c2a8-4dff-8f5f-218c1d96351a" name="Default Changelist" comment="Webinar and Event : j'ai tout changé">
+      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +108,7 @@
       <workItem from="1573164573145" duration="1537000" />
       <workItem from="1573344247554" duration="2963000" />
       <workItem from="1573358175998" duration="473000" />
-      <workItem from="1573521534470" duration="6183000" />
+      <workItem from="1573521534470" duration="6489000" />
     </task>
     <task id="LOCAL-00001" summary="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;">
       <created>1573527434436</created>
@@ -220,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573572631813</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Webinar and Event : j'ai touut changé">
+      <created>1573572838111</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573572838111</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +261,7 @@
     <MESSAGE value="Social Media Marketing : j’ai supprimé  &quot;looking to grow your business ? we got you covered&quot;" />
     <MESSAGE value="Social Media Marketing : j'ai changé la disposition du texte&#10;(j'ai ecrit et deplacé le texte une premiere fois en oubliant de cliquer sur la fleche bleue)" />
     <MESSAGE value="Social Media Marketing : j'ai changé la disposition du texte" />
-    <option name="LAST_COMMIT_MESSAGE" value="Social Media Marketing : j'ai changé la disposition du texte" />
+    <MESSAGE value="Webinar and Event : j'ai touut changé" />
+    <option name="LAST_COMMIT_MESSAGE" value="Webinar and Event : j'ai touut changé" />
   </component>
 </project>
