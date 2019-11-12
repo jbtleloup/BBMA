@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f201938a-c2a8-4dff-8f5f-218c1d96351a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f201938a-c2a8-4dff-8f5f-218c1d96351a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
       <workItem from="1573164573145" duration="1537000" />
       <workItem from="1573344247554" duration="2963000" />
       <workItem from="1573358175998" duration="473000" />
-      <workItem from="1573521534470" duration="4755000" />
+      <workItem from="1573521534470" duration="5072000" />
     </task>
     <task id="LOCAL-00001" summary="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;">
       <created>1573527434436</created>
@@ -174,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573530642700</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="A digital marketing agency = j'ai ajouté : email &quot;marketing&quot;, j'ai supprimé &quot;advertisement / reach the best results&quot; et j'ai ajouté &quot;paid traffic / grow your business and generate more revenue &quot;&quot;">
+      <created>1573571177159</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1573571177159</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +205,7 @@
     <MESSAGE value="Agency : &quot;New York city based agendy&quot;" />
     <MESSAGE value="Agency : &quot;New York based agency&quot;" />
     <MESSAGE value="Made for success &quot;From highly skilled marketers to software engineers&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made for success &quot;From highly skilled marketers to software engineers&quot;" />
+    <MESSAGE value="A digital marketing agency = j'ai ajouté : email &quot;marketing&quot;, j'ai supprimé &quot;advertisement / reach the best results&quot; et j'ai ajouté &quot;paid traffic / grow your business and generate more revenue &quot;&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="A digital marketing agency = j'ai ajouté : email &quot;marketing&quot;, j'ai supprimé &quot;advertisement / reach the best results&quot; et j'ai ajouté &quot;paid traffic / grow your business and generate more revenue &quot;&quot;" />
   </component>
 </project>
