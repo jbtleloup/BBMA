@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f201938a-c2a8-4dff-8f5f-218c1d96351a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f201938a-c2a8-4dff-8f5f-218c1d96351a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,7 @@
       <workItem from="1573164573145" duration="1537000" />
       <workItem from="1573344247554" duration="2963000" />
       <workItem from="1573358175998" duration="473000" />
-      <workItem from="1573521534470" duration="7371000" />
+      <workItem from="1573521534470" duration="7616000" />
     </task>
     <task id="LOCAL-00001" summary="suppression et ajout d'une phrase : Bold &quot; we generate a constant flow of qualified leads etc.&quot;">
       <created>1573527434436</created>
@@ -264,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573573953533</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Social Media Marketing : j'ai raccourci la phrase pour garder l'esthetique visuel">
+      <created>1573574381555</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1573574381556</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +307,7 @@
     <MESSAGE value="Monthly performance : j'ai ajouté &quot;Thanks to our monthly analysis, you can track every penny of your investment and see your sales grow.&quot;" />
     <MESSAGE value="Monthly performance : j'ai la disposition du texte" />
     <MESSAGE value="Webinar and event : j'ai ajouté &quot;Our team organizes tailor-made webinar to grow your business.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Webinar and event : j'ai ajouté &quot;Our team organizes tailor-made webinar to grow your business.&quot;" />
+    <MESSAGE value="Social Media Marketing : j'ai raccourci la phrase pour garder l'esthetique visuel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Social Media Marketing : j'ai raccourci la phrase pour garder l'esthetique visuel" />
   </component>
 </project>
