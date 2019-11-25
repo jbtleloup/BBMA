@@ -110,6 +110,31 @@ jQuery(function ($) {
     /*   Contact Form Validating
     /* ========================================================================= */
 
+    $('#budget').on('input change', function() {
+
+        const
+            element = $('#budget'),
+            value = element.val();
+        let step, min;
+
+        if (value > 5000) {
+            step = 1000;
+            min = 0;    // switch to zero because we want to finish at max=10k; w/o max=9500 (multiples of min w/ 1k step)
+        }
+        else if (value > 1500) {
+            step = 500;
+            min = 500;
+        }
+        else {
+            min = 500;
+            step = 100;
+        }
+
+        element.attr('step', step);
+        element.attr('min', min);
+
+    });
+
 
     $('#contact-submit').click(function (e) {
 
@@ -118,11 +143,11 @@ jQuery(function ($) {
 
         /* declare the variables, var error is the variable that we use on the end
         to determine if there was an error or not */
-        var error = false;
-        var name = $('#name').val();
-        var email = $('#email').val();
-        var subject = $('#subject').val();
-        var message = $('#message').val();
+        let error = false;
+        const name = $('#name').val();
+        const email = $('#email').val();
+        const subject = $('#subject').val();
+        const message = $('#message').val();
 
         /* in the next section we do the checking by using VARIABLE.length
         where VARIABLE is the variable we are checking (like name, email),
@@ -136,30 +161,29 @@ jQuery(function ($) {
         email.indexOf('@') which checks if there is @ in the email input field.
         This JavaScript function will return -1 if no occurrence have been found.*/
         if (name.length === 0) {
-            var error = true;
+            error = true;
             $('#name').css('border-color', '#D8000C');
         } else {
             $('#name').css('border-color', '#666');
         }
-        if (email.length === 0 || email.indexOf('@') === '-1') {
-            var error = true;
+        if (email.length === 0 || email.indexOf('@') === -1) {
+            error = true;
             $('#email').css('border-color', '#D8000C');
         } else {
             $('#email').css('border-color', '#666');
         }
         if (subject.length === 0) {
-            var error = true;
+            error = true;
             $('#subject').css('border-color', '#D8000C');
         } else {
             $('#subject').css('border-color', '#666');
         }
         if (message.length === 0) {
-            var error = true;
+            error = true;
             $('#message').css('border-color', '#D8000C');
         } else {
             $('#message').css('border-color', '#666');
         }
-
         //now when the validation is done we check if the error variable is false (no errors)
         if (error === false) {
             //disable the submit button to avoid spamming
@@ -286,8 +310,18 @@ jQuery(function ($) {
     //console.log($("tspan:visible").filter(n => $(n).text() !== undefined && $(n).text().length === 5));
 
     const getLastVisibleHour = () => {
-        const visibleTspans = $("tspan");
+        const tspans = $("tspan");
 
+        const visibleTspans = [];
+
+        for (let i = 0; i < tspans.length; i++) {
+            const currentTspanParent = $(tspans[i]).parent().parent().parent();
+
+            if ($(currentTspanParent).css("display") !== "none") {
+                visibleTspans.push($(tspans[i])[0]);
+            }
+        }
+        //console.log(visibleTspans);
         const visibleHours = [];
         for (let i = 0; i < visibleTspans.length; i++) {
             const currentTspanText = visibleTspans[i].innerHTML;
@@ -295,43 +329,64 @@ jQuery(function ($) {
                 visibleHours.push(currentTspanText);
         }
         visibleHours.sort();
-        // console.log(visibleHours);
+        console.log("Visibile Hours: " + visibleHours);
         return visibleHours.pop();
     };
 
-    const changeLabel = (tspanPreviousContent, tspanNewContent) =>
+    const labels = ["A Day with BMMA", "Step1: Signing Your Contract", "Step2: Setting Up Your Website", "Step3: Creating Marketing Content",
+        "Step4: Designing Your Marketing Funnel", "Step5: ROI Tracking", "Step6: Leveraging Feedback to Improve Strategy","Step7: Celebrate!"];
+    const stepsHours = ["06:00", "08:00", "10:00", "12:30", "16:00", "20:30", "23:30"];
+    let getLastHourInterval;
+    let currentLabelText = labels[0];
+
+    const changeLabel = (tspanNewContent) =>
     {
         const visibleTspans = $("tspan");
         console.log("content: " + tspanNewContent);
         for (let i = 0; i < visibleTspans.length; i++) {
             const currentTspanText = visibleTspans[i].innerHTML;
-            if (currentTspanText === tspanPreviousContent) {
+            if (currentTspanText === currentLabelText) {
                 visibleTspans[i].innerHTML = tspanNewContent;
+                currentLabelText = tspanNewContent;
             }
         }
     };
 
-    const labels = ["A Day with BMMA", "Step1: Signing Your Contract", "Step2: Setting Up Your Website", "Step3: Creating Marketing Content",
-        "Step4: Designing Your Marketing Funnel", "Step5: ROI Tracking", "Step6: Celebrate!"];
-    const stepsHours = ["06:30", "08:00", "10:00", "12:30", "16:00", "20:30", "00:00"];
-    let getLastHourInterval;
-    $("#chartdiv").mouseenter(() => {
-        getLastHourInterval = window.setInterval(function () {
-                //console.log(getLastVisibleHour());
-                const lastVisibleHour = getLastVisibleHour();
-                const index = stepsHours.indexOf(lastVisibleHour);
-                //console.log(index);
-                if (index !== -1) {
-                    changeLabel(labels[index], labels[index+1]);
-                }
+    const getStepHoursIndexFromHour = (time) => {
+        return stepsHours.lastIndexOf(stepsHours.filter(n => n <= time).pop());
+    };
 
+
+    const chartDiv = $("#chartdiv");
+    chartDiv.mouseenter(() => {
+        getLastHourInterval = window.setInterval(function () {
+                const lastVisibleHour = getLastVisibleHour();
+                let index = getStepHoursIndexFromHour(lastVisibleHour);
+                if (index !== -1) {
+                    changeLabel(labels[++index]);
+                }
             }, 15);
         }
     );
-    $("#chartdiv").mouseleave(() => {
+    chartDiv.mouseleave(() => {
             window.clearInterval(getLastHourInterval);
         }
     );
+
+    /* ========================================================================= */
+    /*   Contact Form Budget Range
+    /* ========================================================================= */
+
+    let i = document.getElementById("budget"),
+        o = document.querySelector('[for="budget"]');
+
+    o.innerHTML = "Your Budget: " + i.value;
+
+// use 'change' instead to see the difference in response
+    i.addEventListener('input', function () {
+        o.innerHTML = "Your Budget: " + i.value;
+    }, false);
+
 
 
 });
