@@ -135,6 +135,11 @@ jQuery(function ($) {
 
     });
 
+    function isEmailValid(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
 
     $('#contact-submit').click(function (e) {
 
@@ -146,7 +151,7 @@ jQuery(function ($) {
         let error = false;
         const name = $('#name').val();
         const email = $('#email').val();
-        const subject = $('#subject').val();
+        const companyName = $('#companyName').val();
         const message = $('#message').val();
 
         /* in the next section we do the checking by using VARIABLE.length
@@ -166,17 +171,17 @@ jQuery(function ($) {
         } else {
             $('#name').css('border-color', '#666');
         }
-        if (email.length === 0 || email.indexOf('@') === -1) {
+        if (email.length === 0 || !isEmailValid(email)) {
             error = true;
             $('#email').css('border-color', '#D8000C');
         } else {
             $('#email').css('border-color', '#666');
         }
-        if (subject.length === 0) {
+        if (companyName.length === 0) {
             error = true;
-            $('#subject').css('border-color', '#D8000C');
+            $('#companyName').css('border-color', '#D8000C');
         } else {
-            $('#subject').css('border-color', '#666');
+            $('#companyName').css('border-color', '#666');
         }
         if (message.length === 0) {
             error = true;
@@ -192,13 +197,14 @@ jQuery(function ($) {
                 'disabled': 'false',
                 'value': 'Sending...'
             });
-
             /* using the jquery's post(ajax) function and a lifesaver
             function serialize() which gets all the data from the form
             we submit it to send_email.php */
+            // console.log($('#contact-form').serialize());
             $.post('sendmail.php', $('#contact-form').serialize(), function (result) {
                 //and after the ajax request ends we check the text returned
-                if (result === 'sent') {
+                console.log("result" + result);
+                /*if (result === 'sent') {
                     //if the mail is sent remove the submit paragraph
                     $('#cf-submit').remove();
                     //and show the mail success div with fadeIn
@@ -208,7 +214,7 @@ jQuery(function ($) {
                     $('#mail-fail').fadeIn(500);
                     //re enable the submit button by removing attribute disabled and change the text back to Send The Message
                     $('#contact-submit').removeAttr('disabled').attr('value', 'Send The Message');
-                }
+                }*/
             });
         }
     });
@@ -372,6 +378,10 @@ jQuery(function ($) {
             window.clearInterval(getLastHourInterval);
         }
     );
+
+    // get rid of left bullet in slider
+    const leftBullet = document.querySelectorAll('[role="slider"]')[1];
+    $(leftBullet).hide();
 
     /* ========================================================================= */
     /*   Contact Form Budget Range
